@@ -2,7 +2,7 @@ var startButton = document.getElementById('start');
 var timerValue = document.getElementById('time');
 var currentQuestionIndex = document.getElementById('question-title');
 var seconds = 60;
-//var counter = 0;
+var counter = 0;
 var hiddenQuestion;
 var firstLine1;
 var currentQuestionIndex = 0;
