@@ -70,14 +70,15 @@ function displayQuestion() {
     });
 
 }
-var score = 0;
-// Function to handle choice clicks:
+var selectedChoice
+    // var score = 0;
+    // Function to handle choice clicks:
 function handleChoiceClick() {
-    var selectedChoice = this.textContent;
+    selectedChoice = this.textContent;
     // Check if the selected choice is correct 
     if (questions[currentQuestionIndex].correctAnswers.includes(selectedChoice)) {
         console.log("Correct answer!");
-        score++;
+        score + 2;
     } else {
         console.log("Incorrect answer.");
         // here subtract the time if answer is incorrect
@@ -91,7 +92,7 @@ function handleChoiceClick() {
     } else {
         // All questions answered
         console.log("Quiz completed!");
-
+        stopQuiz();
 
     }
     // Update the counter display
