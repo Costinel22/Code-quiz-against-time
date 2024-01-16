@@ -18,7 +18,8 @@ https://costinel22.github.io/Code-quiz-against-time/
 ## Usage
 Questions block example, using sa ansverse array syntax and for good answers strings. 
  ![alt text](./assets/images/questions.png)
- 
+ How to change screen to hide one to show another.
+ ![alt text](./assets/images/screen.png)
 
 ## Credits
 https://www.freecodecamp.org/news/javascript-settimeout-js-timer-to-delay-n-seconds/
