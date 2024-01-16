@@ -1,6 +1,6 @@
-var score;
+var score = 0;
 // Get references to HTML elements
-// const endScreen = document.getElementById("end-screen");
+
 const finalScoreSpan = document.getElementById("final-score");
 const initialsInput = document.getElementById("initials");
 const submitButton = document.getElementById("submit");
@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to display the end screen
     function displayEndScreen(score) {
-        // endScreen.style.display = "block"; // Show the end screen
-        finalScoreSpan.textContent = score; // Update the score
+        finalScoreSpan.textContent = score;
     }
     // Submit button click handler
     submitButton.addEventListener("click", function() {
@@ -20,15 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
         if (enteredInitials.length !== 3) {
             // Handle invalid initials, e.g., display an error message
             feedbackDiv.textContent = "Please enter exactly 3 initials.";
-            //feedbackDiv.style.display = "block"; // Show feedback
+            feedbackDiv.style.display = "block"; // Show feedback
             return;
         }
 
         // Process the submission (e.g., save score and initials)
-        saveScore(score, enteredInitials); // Example function
-
+        saveScore(score, enteredInitials);
         // Display confirmation message
-        feedbackDiv.textContent = "Score saved!";
+        feedbackDiv.textContent = "Score saved is: " + score;;
         feedbackDiv.style.display = "block"; // Show feedback
     });
 
@@ -37,8 +35,4 @@ document.addEventListener("DOMContentLoaded", function() {
         // Implement your score-saving logic here, e.g., using localStorage or a server
         console.log("Score saved:", score, "Initials:", initials);
     }
-
-    // Example trigger for displaying the end screen (replace with your logic)
-    // This could be triggered by a game ending or other events
-    displayEndScreen(score);
 });

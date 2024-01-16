@@ -43,6 +43,4 @@ function stopQuiz() {
 }
 sendSubmit.addEventListener("click", function() {
     seeScore.style.display = "none";
-
-    // hiScoreViw.style.display = "block";
 })

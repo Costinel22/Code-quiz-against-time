@@ -74,7 +74,9 @@ function handleChoiceClick() {
     // Check if the selected choice is correct 
     if (questions[currentQuestionIndex].correctAnswers.includes(selectedChoice)) {
         console.log("Correct answer!");
-        score + 2;
+        score = score + 1;
+        finalScoreSpan.textContent = score;
+
     } else {
         console.log("Incorrect answer.");
         // here subtract the time if answer is incorrect
