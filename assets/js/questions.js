@@ -28,11 +28,12 @@ questions = [{
         choices: ["color", "backgroundColor", "background-color", "bgColor"],
         correctAnswers: ["background-color"]
     },
-    // {
-    //     question: "What is the difference between inline and external CSS?",
-    //     choices: ["None", "Inline is written in a separate file", "External is written in HTML tags", "Inline is written in a separate file, external is written in HTML tags"],
-    //     correctAnswers: ["Inline is written in HTML tags, external is written in a separate file"]
-    // },
+    {
+        question: "What is the difference between inline and external CSS?",
+        choices: ["None", "Inline is written in a separate file", "External is written in HTML tags", "Inline is written in a separate file, external is written in HTML tags"],
+        correctAnswers: ["Inline is written in HTML tags, external is written in a separate file"]
+    }
+    //,
     // {
     //     question: "How do you create a JavaScript variable?",
     //     choices: ["var variableName = value", "let variableName = value", "const variableName = value", "All of the above"],
@@ -48,11 +49,6 @@ questions = [{
     //     choices: ["No difference", "Functions are standalone, methods are associated with objects", "Methods are standalone, functions are associated with objects", "Functions return values, methods don't"],
     //     correctAnswers: ["Functions are standalone, methods are associated with objects"]
     // },
-    // {
-    //     question: "How do you link an external CSS file to an HTML document?",
-    //     choices: ["<link rel='stylesheet' href='style.css'>", "<style src='style.css'>", "<link href='style.css'>", "<stylesheet src='style.css'>"],
-    //     correctAnswers: ["<link rel='stylesheet' href='style.css'>"]
-    // }
 ];
 var currentQuestionIndex = 0;
 
